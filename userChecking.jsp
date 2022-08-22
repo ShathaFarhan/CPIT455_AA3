@@ -5,9 +5,9 @@
 <%
 try {
 	String username = String.valueOf(session.getAttribute("username")); 
-	String URL = "jdbc:mysql://localhost:3306/cpit455?useSSL=false";
+	String URL = "jdbc:mysql://localhost:3306/ouab?useSSL=false";
 	String USERNAME = "root"; // use your username of Mysql server
-	String PASSWORD = "1234"; // use your password of Mysql server
+	String PASSWORD = "jody6817813"; // use your password of Mysql server
 	Connection connection = null;
 	String sqlQuery = "";
 	PreparedStatement preparedStmt = null;

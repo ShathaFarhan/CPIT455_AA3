@@ -3,20 +3,16 @@
 	pageEncoding="ISO-8859-1"%><!DOCTYPE html>
 <html>
 <head>
-<title>Payment Page| OUAB</title>
+<title>Payment Page</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href=css/stylesheet.css>
+<link rel="stylesheet" href=stylesheet.css>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript" src="javascript/javascript.js"></script>
 </head>
 <body>
 <% String username = String.valueOf(session.getAttribute("username"));
-session.setMaxInactiveInterval(60); 
+session.setMaxInactiveInterval(60);
 %>
-
-
-
-
 	<table class="Ouab">
 		<thead>
 			<tr class="headerbar">
@@ -32,7 +28,7 @@ session.setMaxInactiveInterval(60);
 								onmousedown="gradientBtn(this, '#9bb7cc', '#9bb7cc')"
 								onmouseup="gradientBtn(this, '#bdcfdd', '#bdcfdd')"><p
 										class="menuP">HOME</p></a></li>
-							<li><a class="" href="books.jsp"
+							<li><a class="" href="furniture.jsp"
 								onmousedown="gradientBtn(this, '#9bb7cc', '#9bb7cc')"
 								onmouseup="gradientBtn(this, '#bdcfdd', '#bdcfdd')"><p
 										class="menuP">BOOKS</p></a></li>
@@ -88,10 +84,7 @@ session.setMaxInactiveInterval(60);
 			
 			<div class = "form-box">
 			
-            <%                
-    if(session.getAttribute("username") != null && session.getAttribute("password") != null){
- %>			
-    <div>
+			<div>
         
        		<label>Credit card information:</label><br>
       </div>
@@ -130,11 +123,6 @@ session.setMaxInactiveInterval(60);
 					onmouseup="gradientBtn(this, '#cfae9f', '#836e62')">
 
 			</form>
-                            
-                           <% } else
-                //out.print("You are not authorized to see info");
-                response.sendRedirect("login.jsp");
-    %>
 			<!-- ************** end of form ************** -->
 			 </div>
 			 </div>
@@ -148,7 +136,7 @@ session.setMaxInactiveInterval(60);
 			</tr>
 			<!-- ************** footer ************** -->
 			<tr>
-				<td class="footer">&copy;2022 by AA3 group. and created for
+				<td class="footer">&copy;2022 by A3 group. and created for
 					 CPIT-455 coures.</td>
 			</tr>
 		</tfoot>
